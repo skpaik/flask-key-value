@@ -19,5 +19,5 @@ class Singleton(SingletonBase):
 
         return value
 
-    def remove(self, key):
-        self.local_map.pop(key, None)
+    def delete(self, key):
+        return self.local_map.pop(key, None)
