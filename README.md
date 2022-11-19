@@ -38,8 +38,7 @@ flask run
 - Keep `flask run` on current terminal
 - Open a new terminal on current project
 - Activate Environment
-- Goto tests folder
 - In terminal run 
 ```shell
-python kv.py
+python tests/kv.py
 ```
