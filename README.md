@@ -33,6 +33,11 @@ pip install -r requirements.txt
 ```shell
 flask run
 ```
+### Helper methods
+File name: `tests/fkv_helper.py`
+Methods name: `set_kv, get_kv, delete_kv`
+
+Uses example in class `tests/kv.py`
 
 ### Test the project
 - Keep `flask run` on current terminal

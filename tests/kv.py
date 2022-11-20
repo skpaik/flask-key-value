@@ -1,14 +1,13 @@
-import requests
+from fkv_helper import set_kv, get_kv, delete_kv
 
-base_url = 'http://127.0.0.1:5000'
+r = set_kv('a', 291)
+print(r)
 
-r = requests.get(base_url + '/put/a/291')
-print(r.text)
+r = set_kv('b', 420)
+print(r)
 
-r = requests.get(base_url + '/put/b/420')
-print(r.text)
-r = requests.get(base_url + '/get/b')
-print(r.text)
+r = get_kv('b')
+print(r)
 
 dict_data = {
     "action": 196,
@@ -16,10 +15,10 @@ dict_data = {
     'switch': 3333
 }
 
-r = requests.get(base_url + '/put/d/' + str(dict_data))
-print(r.text)
-r = requests.get(base_url + '/get/d')
-print(r.text)
+r = set_kv('d', dict_data)
+print(r)
+r = get_kv('d')
+print(r)
 
-r = requests.get(base_url + '/delete/b')
-print(r.text)
+r = delete_kv('d')
+print(r)
