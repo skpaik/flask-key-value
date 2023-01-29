@@ -35,7 +35,7 @@ flask run
 ```
 ### Helper methods
 File name: `tests/fkv_helper.py`
-Methods name: `set_kv, get_kv, delete_kv`
+Methods name: `set_kv, get_kv, delete_kv, set_series_kv, get_series_kv, delete_series_kv`
 
 Uses example in class `tests/kv.py`
 
