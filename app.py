@@ -85,7 +85,7 @@ def get_key2_series_value(key1, key2):
 @app.route('/get-series/<key1>/<key2>/<key3>/')
 def get_key3_series_value(key1, key2, key3):
     value = cd.get_series3(key1, key2, key3)
-    print('LOG: GET Series 2', key1, key2, key3, value)
+    print('LOG: GET Series 3', key1, key2, key3, value)
     return value
 
 
